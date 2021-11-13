@@ -10,17 +10,17 @@ import ItemEdit from '../pages/ItemEdit'
 
 const MainPlace = (props) => {
     <HomeService test={"przekaz"}/>
-    return (  
+    return (
         <Switch>
-            <Route path="/" exact component={HomeService } />
-            <Route path="/new-jobs" component={NewJobs} />
-            <Route path="/edit/:id" component={ItemEdit} />  
-            <Route path="/item/:id" component={ItemView} />
-            <Route path="/current-jobs" component={CurrentlyJobs} />
-            <Route path="/finish-jobs" component={FinishJob} />
-            <Route component={ErrorPage} />
+            <Route path="/" exact component={HomeService}/>
+            <Route path="/new-jobs" component={NewJobs}/>
+            <Route path="/edit/:id" component={ItemEdit}/>
+            <Route path="/item/:id" component={ItemView}/>
+            <Route path="/current-jobs" component={CurrentlyJobs}/>
+            <Route path="/finish-jobs" component={FinishJob}/>
+            <Route component={ErrorPage}/>
         </Switch>
     );
 }
- 
+
 export default MainPlace;

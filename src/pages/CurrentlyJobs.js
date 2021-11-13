@@ -5,7 +5,7 @@ const CurrentlyJobsPage = () => {
         <div>
             New Currently Page
         </div>
-      );
+    );
 }
- 
+
 export default CurrentlyJobsPage;

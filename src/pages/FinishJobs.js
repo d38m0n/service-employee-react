@@ -1,11 +1,11 @@
 import React from 'react';
 
 const FinishJobsPage = () => {
-    return (  
+    return (
         <div>
             Finish Jobs Page
         </div>
     );
 }
- 
+
 export default FinishJobsPage;

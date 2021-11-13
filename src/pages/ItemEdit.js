@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
+
 class ItemEdit extends Component {
-    state ={
-        currentyClient:"",
-        item:[{
+    state = {
+        currentyClient: "",
+        item: [{
             "id": 1,
             "voivodeship": "Łódzkie",
             "location": "CODO",
@@ -13,19 +14,19 @@ class ItemEdit extends Component {
             "columnID": "11914",
             "instStatus": "Ready for Review"
         },
-        {
-            "id": 2,
-            "voivodeship": "Łódzkie",
-            "location": "CODO",
-            "city": "Piotrków",
-            "zipCode": "94-443",
-            "street": "Kusocińskiego 1",
-            "apmNumber": "PLES2423406Z0138",
-            "columnID": "206936",
-            "instStatus": "Ready for Review"
-        }],
+            {
+                "id": 2,
+                "voivodeship": "Łódzkie",
+                "location": "CODO",
+                "city": "Piotrków",
+                "zipCode": "94-443",
+                "street": "Kusocińskiego 1",
+                "apmNumber": "PLES2423406Z0138",
+                "columnID": "206936",
+                "instStatus": "Ready for Review"
+            }],
         isLoaded: true,
-       }
+    }
     ViewItemPage = (props) => (
         <>
             <div>{props.item.apmNumber}</div>
@@ -35,28 +36,28 @@ class ItemEdit extends Component {
             <div>{props.item.street}</div>
             <div>{props.item.instStatus}</div>
         </>
-        )
-    intemFind = () =>{
+    )
+    itemFind = () => {
         let itemSearch = this.state.item
-       itemSearch = itemSearch
-        .filter(i => 
-           i.apmNumber.toLowerCase().includes(this.props.match.params.id.toLowerCase()))
-        .map(i => <this.ViewItemPage item={i}/> )
+        itemSearch = itemSearch
+            .filter(i =>
+                i.apmNumber.toLowerCase().includes(this.props.match.params.id.toLowerCase()))
+            .map(i => <this.ViewItemPage item={i}/>)
 
         return itemSearch;
     }
 
 
-   render() {
- 
-    
-    return (   
-        <div> Edit Page
-           {this.intemFind()}
-        </div>
-            );
-   }
+    render() {
+
+
+        return (
+            <div> Edit Page
+                {this.itemFind()}
+            </div>
+        );
+    }
 
 }
- 
+
 export default ItemEdit;  
