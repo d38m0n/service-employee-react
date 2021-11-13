@@ -1,0 +1,40 @@
+
+
+nav {
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+    height: 100%;
+    padding: 2px;  
+
+}
+
+.buttonService { 
+    position: relative;
+    overflow: hidden;
+    height: 30%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+.buttonService span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+}
+.buttonService i{
+    position: absolute;
+    top:10%;
+    right: 5%;
+}
+.buttonService p{
+    position: absolute;
+    bottom:10%;
+    left: 5%;
+}

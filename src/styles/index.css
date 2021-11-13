@@ -1,0 +1,19 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2vw;
+}
+
+body{
+  position: relative;
+  margin:auto;
+  overflow: hidden;
+  max-width: 1330px;
+
+}

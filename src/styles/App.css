@@ -1,0 +1,53 @@
+div .app{
+    display: flex;
+    overflow: hidden;
+    flex-direction:column;
+    align-items: stretch;
+    height: 100vh;
+    background: white
+}
+header{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-basis: 10vh;
+    max-height: 10vh;
+    border-bottom: 1px solid gray;
+
+ 
+}
+main{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-direction: row;
+    flex-basis:90vh;
+    max-height:90vh;
+    box-sizing: border-box;
+    padding-top: 1%;
+    padding-bottom: 35px;
+}
+aside{
+    width: 200px;
+    min-width: 200px;
+    position: relative;
+    box-sizing: border-box;
+ 
+}
+section{
+    position: relative;
+    overflow: auto;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+footer{
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    height: 130px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
